@@ -8,15 +8,7 @@ tuân thủ lập trình hướng module (Modular Programming) nhằm tối ưu 
 
 ## 👥 Phân công nhiệm vụ & Sản phẩm bàn giao
 
-LINK GG SHEET OLP_AI_CV: https://docs.google.com/spreadsheets/d/1e1VbjHUkjbwBUhNlQzfbxv-ReEsBs5M9sjEl6wFSvQM/edit?gid=1174271979#gid=1174271979
-
----
-
-
-## 🌐️ Work Environment
-
-MÔI TRƯỜNG LÀM VIỆC KHUYẾN KHÍCH: 
-Google Colab: https://colab.research.google.com/
+LINK [Google Sheets - OLP_AI_CV](https://docs.google.com/spreadsheets/d/1e1VbjHUkjbwBUhNlQzfbxv-ReEsBs5M9sjEl6wFSvQM/edit?gid=1174271979#gid=1174271979)
 
 ---
 
@@ -43,6 +35,40 @@ olp_ai_cv/
   - Kỷ luật cập nhật: Tuân thủ quy chế báo cáo tiến độ trước 22h00 hàng ngày và áp dụng nghiêm ngặt Quy tắc 2 giờ khi gặp sự cố kỹ thuật.
 
 ---
+
+
+## ⚡ Luồng xử lý kỹ thuật (Technical Data Flow)
+
+Cả team tuân thủ đúng luồng truyền dữ liệu giữa các file như sau:
+
+```text
+  [ data/ ] (Ảnh thô từ BTC)
+      │
+      ▼
+┌─────────────────────────────────────────────────────────┐
+│  src/dataset.py (Khôi)                                  │
+│  - Đọc ảnh, Augmentation, Resize                        │
+│  - Trả về Batch Tensor: Image [B, C, H, W], Label [B]   │
+└──────────────────────────┬──────────────────────────────┘
+                           │  (Chuyển Batch Tensor)
+                           ▼
+┌─────────────────────────────────────────────────────────┐
+│  src/model.py (Khánh)                                   │
+│  - Nhận Input Tensor: [B, C, H, W]                       │
+│  - Đưa qua mạng CNN -> Trả về Logits: [B, Num_Classes]   │
+└──────────────────────────┬──────────────────────────────┘
+                           │  (Chuyển Model & Output)
+                           ▼
+┌─────────────────────────────────────────────────────────┐
+│  src/train.py (Dương)                                   │
+│  - Nhận DataLoader từ dataset.py & Model từ model.py    │
+│  - Tính Loss/Optimizer, chạy Epoch, Lưu Checkpoint      │
+│  - Chạy Inference trên tập Test & Xuất `submission.csv` │
+└─────────────────────────────────────────────────────────┘
+```
+
+---
+
 
 ## ⚙️ Road Map
 
@@ -72,7 +98,9 @@ olp_ai_cv/
 +--------------------------------------------------------+
 ```
 
-## 🚀 Quy trình làm việc với Git + Google Colab
+## 🌐 Môi trường & Quy trình làm việc (Google Colab + Git)
+
+Môi trường khuyến khích: Google Colab (Dùng GPU T4 miễn phí): https://colab.research.google.com/
 
 ### 1. Clone Repo về Colab mỗi khi mở session mới (Command Prompt/Terminal) 
 ``` Command Prompt/Terminal
