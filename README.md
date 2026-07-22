@@ -74,8 +74,8 @@ olp_ai_cv/
 
 ## 🚀 Quy trình làm việc với Git + Google Colab
 
-### 1. Clone Repo về Colab *(Mỗi khi mở session mới)*
-```python
+### 1. Clone Repo về Colab mỗi khi mở session mới (Command Prompt/Terminal) 
+``` Command Prompt/Terminal
 !git clone [https://github.com/120vey0u/OLP_AI_CV.git](https://github.com/120vey0u/OLP_AI_CV.git)
 %cd OLP_AI_CV
 ```
@@ -84,12 +84,12 @@ olp_ai_cv/
 - Mở menu bên trái Colab → Chọn biểu tượng Files (Thư mục).
 - Double-click vào file cần sửa (src/dataset.py, src/model.py) để chỉnh sửa trực tiếp ở giao diện bên phải.
 
-### 3. Chạy thử & Huấn luyện
+### 3. Chạy thử & Huấn luyện (Python)
 ```python
 !python src/train.py
 ```
 
-### 4. Commit & Push ngược lại GitHub
+### 4. Commit & Push ngược lại GitHub (Command Prompt/Terminal)
 ``` Command Prompt/Terminal
 !git config --global user.name "Tên_Của_Bạn"
 !git config --global user.email "email_github@gmail.com"
@@ -99,7 +99,7 @@ olp_ai_cv/
 # Nhập Personal Access Token (PAT) khi được hỏi Password
 ```
 
-💡 Mẹo: Lưu bộ dữ liệu thô (Dataset) trên Google Drive và mount vào Colab để không mất thời gian upload lại khi hết phiên làm việc: 
+💡 Mẹo: Lưu bộ dữ liệu thô (Dataset) trên Google Drive và mount vào Colab để không mất thời gian upload lại khi hết phiên làm việc (Python): 
 ``` Python
 from google.colab import drive
 drive.mount('/content/drive')
