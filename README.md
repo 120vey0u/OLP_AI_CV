@@ -8,8 +8,10 @@ tuân thủ lập trình hướng module (Modular Programming) nhằm tối ưu 
 
 ## 👥 Phân công nhiệm vụ & Sản phẩm bàn giao
 
+```text
 LINK GG SHEET OLP_AI_CV: https://docs.google.com/spreadsheets/d/1e1VbjHUkjbwBUhNlQzfbxv-ReEsBs5M9sjEl6wFSvQM/edit?gid=1174271979#gid=1174271979
 MÔI TRƯỜNG LÀM VIỆC KHUYẾN KHÍCH: Google Colab
+```
 
 ---
 
