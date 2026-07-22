@@ -39,13 +39,29 @@ olp_ai_cv/
 
 ## ⚙️ Road Map
 
-```mermaid
-flowchart TD
-    P1["<b>PHASE 1: KHỞI TẠO</b> (Đã xong)<br>• Dương: Repo & Cấu trúc chuẩn"] 
-    P2["<b>PHASE 2: PHÁT TRIỂN</b> (Ngày 1 - 4)<br>• Khôi: src/dataset.py<br>• Khánh: src/model.py"]
-    P3["<b>PHASE 3: TÍCH HỢP & TRAIN</b> (Ngày 5 - 6)<br>• Dương: src/train.py"]
-    P4["<b>PHASE 4: TỐI ƯU & NỘP BÀI</b> (Ngày 7)<br>• Toàn đội: Tinh chỉnh & submission.csv"]
+```text
++--------------------------------------------------------+
+|             PHASE 1: KHỞI TẠO (ĐÃ XONG)                |
+|  • Dương  -> Khởi tạo GitHub Repo & Cấu trúc chuẩn     |
++---------------------------+----------------------------+
+                            |
+                            v
++--------------------------------------------------------+
+|          PHASE 2: PHÁT TRIỂN ĐỘC LẬP (Ngày 1 - 4)      |
+|  • Khôi   -> Hoàn thiện src/dataset.py                 |
+|  • Khánh  -> Hoàn thiện src/model.py                   |
++---------------------------+----------------------------+
+                            |
+                            v
++--------------------------------------------------------+
+|            PHASE 3: TÍCH HỢP & TRAIN (Ngày 5 - 6)      |
+|  • Dương  -> Hoàn thiện src/train.py                   |
++---------------------------+----------------------------+
+                            |
+                            v
++--------------------------------------------------------+
+|           PHASE 4: TỐI ƯU & NỘP BÀI (Ngày 7)           |
+|  • Toàn đội -> Tinh chỉnh mô hình & submission.csv     |
++--------------------------------------------------------+
+```
 
-    P1 --> P2 --> P3 --> P4
-
----
