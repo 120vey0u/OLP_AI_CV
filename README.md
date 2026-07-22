@@ -16,12 +16,11 @@ LINK [Google Sheets - OLP_AI_CV](https://docs.google.com/spreadsheets/d/1e1VbjHU
 
 ```text
 olp_ai_cv/
-├── data/               # Thư mục chứa dữ liệu thô (Dataset từ BTC)
+├── data/               # Thư mục chứa dữ liệu thô (Dataset từ BTC) (Clone GitHub về máy local -> Tự tạo folder data/ này riêng -> Đưa dữ liệu thô (ảnh, ...) riêng để  |                         tránh rò rỉ dữ liệu)
 ├── src/
 │   ├── dataset.py      # Định nghĩa CustomDataset & DataLoader chuẩn hóa
 │   ├── model.py        # Định nghĩa kiến trúc mạng CNN
 │   └── train.py        # Vòng lặp huấn luyện, đánh giá & xuất file nộp bài
-├── requirements.txt    # Danh sách thư viện phụ thuộc
 └── README.md           # Tài liệu kỹ thuật dự án
 ```
 
