@@ -39,28 +39,13 @@ olp_ai_cv/
 
 ## ⚙️ Road Map
 
-┌────────────────────────────────────────────────────────┐
-│             PHASE 1: KHỞI TẠO (ĐÃ XONG)                │
-│  • Khởi tạo GitHub Repo & Cấu trúc thư mục chuẩn       │
-└──────────────────────────┬─────────────────────────────┘
-                           │
-                           ▼
-┌────────────────────────────────────────────────────────┐
-│          PHASE 2: PHÁT TRIỂN ĐỘC LẬP (Ngày 1 - 4)      │
-│  • Khôi   → Hoàn thiện `src/dataset.py`                │
-│  • Khánh  → Hoàn thiện `src/model.py`                  │
-└──────────────────────────┬─────────────────────────────┘
-                           │
-                           ▼
-┌────────────────────────────────────────────────────────┐
-│            PHASE 3: TÍCH HỢP & TRAIN (Ngày 5 - 6)      │
-│  • Dương  → Hoàn thiện `src/train.py` (Ráp Code)       │
-└──────────────────────────┬─────────────────────────────┘
-                           │
-                           ▼
-┌────────────────────────────────────────────────────────┐
-│           PHASE 4: TỐI ƯU & NỘP BÀI (Ngày 7)           │
-│  • Toàn đội → Tinh chỉnh mô hình & Xuất file nộp bài   │
-└────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    P1["<b>PHASE 1: KHỞI TẠO</b> (Đã xong)<br>• Dương: Repo & Cấu trúc chuẩn"] 
+    P2["<b>PHASE 2: PHÁT TRIỂN</b> (Ngày 1 - 4)<br>• Khôi: src/dataset.py<br>• Khánh: src/model.py"]
+    P3["<b>PHASE 3: TÍCH HỢP & TRAIN</b> (Ngày 5 - 6)<br>• Dương: src/train.py"]
+    P4["<b>PHASE 4: TỐI ƯU & NỘP BÀI</b> (Ngày 7)<br>• Toàn đội: Tinh chỉnh & submission.csv"]
+
+    P1 --> P2 --> P3 --> P4
 
 ---
