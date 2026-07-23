@@ -1,0 +1,35 @@
+# Dữ liệu thô & Dataset (Bỏ qua toàn bộ)
+data/
+datasets/
+*.zip
+*.tar
+*.gz
+*.csv
+
+# Trọng số mô hình & Checkpoints (Tránh push file nặng)
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.bin
+checkpoints/
+runs/
+wandb/
+
+# Python & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+env/
+
+# Jupyter / Google Colab
+.ipynb_checkpoints
+
+# IDE & System Files (VS Code, Linux, macOS)
+.vscode/
+.idea/
+.DS_Store
+*.log
